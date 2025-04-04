@@ -1,7 +1,3 @@
-Here's a professional and informative `README.md` for your Deepfake Detection using CLIP project:
-
----
-
 # Deepfake Detection Using CLIP
 
 A deepfake detection system built using OpenAI's CLIP model as a feature extractor, fine-tuned with a custom contrastive loss for better feature separation. The extracted features are used to train SVM classifiers that can accurately detect manipulated videos. This project was evaluated on the **Celeb-DF** dataset.
