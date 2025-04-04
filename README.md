@@ -21,17 +21,18 @@ A deepfake detection system built using OpenAI's CLIP model as a feature extract
 
 ```
 deepfake-detection-clip/
-├── data/                     # Processed frames or embeddings
-├── models/                   # Saved CLIP and SVM models
-├── src/
-│   ├── extract_features.py   # Extract features using CLIP
-│   ├── contrastive_loss.py   # Custom contrastive loss function
-│   ├── train_clip.py         # Fine-tune CLIP with contrastive loss
-│   ├── train_svm.py          # Train SVM on CLIP embeddings
-│   └── evaluate.py           # Evaluate performance on test data
-├── notebooks/                # Jupyter notebooks for experiments
-├── requirements.txt
-└── README.md
+├── clip_detector.py                 # Main script for deepfake detection using CLIP
+├── clip_detector_1.py               # Alternative version of clip detection script
+├── extract_frames_Celeb-real.py     # Extract frames from Celeb-DF real videos
+├── extract_frames_Youtube-real.py   # Extract frames from YouTube real videos
+├── finetune.py                      # Script to fine-tune CLIP with contrastive loss
+├── requirements.txt                 # List of dependencies
+├── svm_train.py                     # Train SVM classifier on CLIP features
+├── test.py                           # Test script for evaluating model performance
+├── test_opencv.py                    # Script for testing OpenCV functionalities
+├── train.py                          # Training script for the detection pipeline
+└── README.md                         # Project documentation
+
 ```
 
 ## 📊 Dataset
